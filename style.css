@@ -112,7 +112,7 @@ body {
 /* desktop */
 .wrapper{
     min-height: 100vh;
-    min-width: 100vw;
+    min-width:max-content;
 
     display: flex;
     justify-content: center;
@@ -123,6 +123,11 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+
+    padding: 2rem;
+}
+.intro_card{
+    height: max-content;
 }
 
 .task_grid{
@@ -186,18 +191,30 @@ body {
 
 .task_grid {
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(3,240px);
+    gap: 1.4rem;
 }
 
 .task_primary{
-    height: fit-content;
+    position: relative;
     border-radius: 1rem;
     overflow: hidden;
+
+}
+.task_primary > svg {
+    position: absolute;
+    top: -5%;
+    right: 5%;
 }
 .task_secondary{
     background-color: var(--clr-Navy-900);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    padding: 2rem;
+    height: 75%;
+    padding: 1.4rem;
     border-radius: 1rem;
 
 }
