@@ -102,145 +102,17 @@ ol[role='list'] {
 
 body {
     background-color: var(--clr-Navy-950);
-
     font-family: var(--ff);
     font-size: var(--fs);
     font-weight: var(--fw-300);
 
- 
 }
 /* desktop */
-.wrapper{
-    min-height: 100vh;
-    min-width:max-content;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-
-    padding: 2rem;
-}
-.intro_card{
-    height: max-content;
-}
-
-.task_grid{
-    display: grid;
-    gap: 1rem;
-}
-
-.primary{
-    background-color: var(--clr-Navy-900);
-    border-radius: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    padding-bottom: 2rem;
-
-}
-
-.primary button {
-    background: none;
-    border: none;
-    
-    width: 30px;
-    height: 30px;
-    padding-left: 2rem;
-    color: var(--clr-Purple-500);
-}
-
-.primary button:hover{
-    color: white;
-}
-.secondary{
-    background-color: var(--clr-Purple-600);
-    border-radius: 1rem;
-    overflow: hidden;
-
-    padding: 1rem;
-    margin-bottom: 1rem;
-
-    color: white;
-    width: 240px;
-
-}
-.secondary p {
-    color: var(--clr-Navy-200);
-}
-.secondary h1 {
-    font-weight: var(--fw-300);
-    padding-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.secondary img {
-    aspect-ratio: 1;
-    max-width: 70px;
-    border-radius: 50%;
-    border: 2px solid white;
-
-    margin-bottom: 2rem;
-}
-
-.task_grid {
-    display: grid;
-    grid-template-columns: repeat(3,240px);
-    gap: 1.4rem;
-}
-
-.task_primary{
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-
-}
-.task_primary > svg {
-    position: absolute;
-    top: -5%;
-    right: 5%;
-}
-.task_secondary{
-    background-color: var(--clr-Navy-900);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    height: 75%;
-    padding: 1.4rem;
-    border-radius: 1rem;
-
-}
-.task_primary h1,
-.task_primary h2{
-    color: white;
-    font-weight: var(--fw-400);
-}
-.task_primary p{
-    color: var(--clr-Purple-500);
-}
-.task_heading{
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-between;
-    align-items: center;
-}
-.task_heading img {
-    aspect-ratio: 1;
-}
-.work_primary{
-    background-color: var(--clr-Orange-300-work);
-}
 
 /* mobile */
-@media screen and (min-width:375px){
+@media screen and (max-width:375px){
+
+
 
 }
