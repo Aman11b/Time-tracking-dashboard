@@ -141,12 +141,14 @@ body {
     background-color: var(--clr-Navy-900);
     border-radius: 1rem;
 
-    width: 100%;
+    min-width: 30%;
+
+
 }
 .intro_secondary{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 
     border-radius: 1rem;
     background-color: var(--clr-Purple-600);
@@ -196,6 +198,71 @@ button:hover{
     color: white;
 }
 
+/* Desktop grid */
+.task_grid{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    height: 100%;
+}
+.task_card{
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position:  95% -5%;
+    background-size: 75px;
+
+    height: 100%;
+    padding-top: 20%;
+}
+.card_secondary{
+    background-color: var(--clr-Navy-900);
+    
+
+    border-radius: 0.9rem;
+
+    padding: 1.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    height: max-content;
+}
+
+.card_heading{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center; 
+}
+.card_secondary h3,
+.card_secondary h1 {
+    color: white;
+    font-weight: var(--fw-300);
+}
+
+.card_secondary p {
+    color: var(--clr-Navy-200);
+    font-size: smaller;
+}
+
+.card_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.work_task{
+    background-color: var(--clr-Orange-300-work);
+
+    background-image: url(./images/icon-work.svg);
+    overflow: hidden;
+}
+
 
 
 
@@ -231,38 +298,22 @@ button:hover{
         gap: 0;
     }
 
-    /* grid */
+    /* Mobile grid */
 
     .task_grid{
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
     }
     .task_card{
-        border-radius: 1rem;
-        background-repeat: no-repeat;
-        background-position:  95% -5%;
-        background-size: 75px;
+        padding-top: 15%;
     }
     .card_secondary{
-        background-color: var(--clr-Navy-900);
-        margin-top: 15%;
-
+        
         border-radius: 0.9rem;
 
         padding: 1.6rem;
 
-        display: flex;
-        flex-direction: column;
-
-        gap: 1rem;
-    }
-    .card_heading{
-        display: flex;
-        justify-content: space-between;
-
-        align-items: center; 
     }
 
     .card_secondary h3,
