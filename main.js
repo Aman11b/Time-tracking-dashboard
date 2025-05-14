@@ -100,26 +100,29 @@ function fetchData(timeframe ='weekly'){
 
             const timeframeLabel = timeframeLabels[timeframe];
 
-            const cardHTML =`
+            const cardHTML = `
             <div class="task_card | ${title.toLowerCase()}_task ">
               <div class="card_secondary">
-                <h3>${title}</h3>
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2.5 0a2.5 2.5 0 1 1 0 5
-                  2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5
-                  2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5
-                  2.5 2.5 0 0 1 0-5Z"
-                    fill="#BBC0FF"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div class ='card_content'>
-                <h1>${current} hrs</h1>
-                <p>${timeframeLabel} - ${previous}</p>
+                <div class="card_heading">
+                  <h3>${title}</h3>
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5
+                    2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5
+                    2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5
+                    2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class ='card_content'>
+                  <h1>${current} hrs</h1>
+                  <p>${timeframeLabel} - ${previous}</p>
+                </div>
               </div>
             </div>`;
+            
             taskGrid.insertAdjacentHTML("beforeend", cardHTML);
         });
     })

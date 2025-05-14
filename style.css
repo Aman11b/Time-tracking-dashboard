@@ -255,15 +255,40 @@ button:hover{
     background-color: var(--clr-Orange-300-work);
 
     background-image: url(./images/icon-work.svg);
-    overflow: hidden;
 }
 
+.play_task{
+    background-color: var(--clr-Blue-300-play);
+    background-image: url(./images/icon-play.svg);
+}
+
+.study_task{
+    background-color: var(--clr-Pink-400-study);
+    background-image: url(./images/icon-study.svg);
+}
+
+.exercise_task{
+    background-color: var(--clr-Green-400-exercise);
+    background-image: url(./images/icon-exercise.svg);
+}
+
+.social_task{
+    background-color: var(--clr-Purple-700-social);
+    background-image: url(./images/icon-social.svg);
+}
+
+.care_task{
+    background-color: var(--clr-Yellow-300-selfcare);
+    background-image: url(./images/icon-self-care.svg);
+
+}
 
 
 
 
 /* mobile */
 @media screen and (max-width:375px){
+
     .container{
         flex-direction: column;
         gap: 2rem;
