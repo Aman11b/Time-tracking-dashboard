@@ -81,9 +81,9 @@
 // actual code
 
 const timeframeLabels ={
-    daily: "Yesterday",
-    weekly: "Last week",
-    monthly: "Last Month"
+  daily: "Yesterday",
+  weekly: "Last week",
+  monthly: "Last Month"
 };
 const taskGrid = document.getElementById('task_grid');
 function fetchData(timeframe ='weekly'){

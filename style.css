@@ -213,6 +213,7 @@ button:hover{
 
     padding-top: 20%;
 
+
 }
 .card_secondary{
     background-color: var(--clr-Navy-900);
@@ -321,6 +322,10 @@ button:hover{
     }
     .task_card{
         padding-top: 15%;
+
+        min-width: 270.38px;
+
+        overflow: hidden;
     }
     .card_secondary{
         border-radius: 0.9rem;
