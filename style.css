@@ -228,6 +228,12 @@ button:hover{
     gap: 1rem;
 }
 
+.card_secondary:hover {
+    cursor: pointer;
+    background-color: var(--clr-Purple-500);
+
+}
+
 .card_heading{
     display: flex;
     justify-content: space-between;
