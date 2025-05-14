@@ -104,7 +104,7 @@ function fetchData(timeframe ='weekly'){
             <div class="task_card | ${title.toLowerCase()}_task ">
               <div class="card_secondary">
                 <div class="card_heading">
-                  <h3>${title}</h3>
+                  <h2>${title}</h2>
                   <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.5 0a2.5 2.5 0 1 1 0 5

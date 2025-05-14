@@ -233,7 +233,7 @@ button:hover{
     justify-content: space-between;
     align-items: center; 
 }
-.card_secondary h3,
+.card_secondary h2,
 .card_secondary h1 {
     color: white;
     font-weight: var(--fw-300);
